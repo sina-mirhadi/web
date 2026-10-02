@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230F2740'/><text x='16' y='23' font-size='20' font-family='Arial' font-weight='700' text-anchor='middle' fill='%234C8DFF'>S</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>سینا | توسعه‌دهنده‌ی فرانت اند</title>
+<meta name="description" content="وب‌سایت شخصی سینا، توسعه‌دهنده‌ی نرم‌افزار با React و Python">
+</head>
+<body>
+<main>
+<section id="hero" class="hero">
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="copy">
+    <h1>سینا | توسعه‌دهنده‌ی فرانت اند</h1>
+    <p></p>
+    <div class="sub" aria-live="off"><span id="typed"></span><i class="caret"></i></div>
+    <div class="actions">
+      <a class="btn btn-primary" data-cur="بزن بریم" href="#projects">مشاهده پروژه ها</a>
+      <span class="btn btn-outline ghost" aria-hidden="true">ارتباط با من</span>
+    </div>
+    <div class="tg-slot"><button id="tgBtn" class="btn btn-light tg" type="button" tabindex="-1">ارسال پیام در تلگرام</button></div>
+    <small id="count" class="count"></small>
+  </div>
+  <div id="escape" class="escape">
+    <div id="tip" class="tip" role="status"></div>
+    <button id="contactBtn" data-cur="بگیرمت!" class="btn btn-outline" type="button">ارتباط با من</button>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="mtrack"><span>REACT</span><span>PYTHON</span><span>JAVASCRIPT</span><span>TELEGRAM BOTS</span><span>BACKEND</span><span>REACT</span><span>PYTHON</span><span>JAVASCRIPT</span><span>TELEGRAM BOTS</span><span>BACKEND</span></div></div>
+
+<section id="projects" class="projects">
+  <div class="wrap">
+    <h2>پروژه‌ها</h2>
+    <p class="rot" id="rot"></p>
+    <div class="progress"><div class="bar"><i></i></div><small id="pl">Deploy: ۰٪</small></div>
+    <div class="cards" aria-hidden="true">
+      <div class="sk"><b>پروژه‌ی بعدی...</b><span></span><span></span><span></span></div>
+      <div class="sk"><b>پروژه‌ی بعدی...</b><span></span><span></span><span></span></div>
+      <div class="sk"><b>پروژه‌ی بعدی...</b><span></span><span></span><span></span></div>
+    </div>
+    <div class="err">Error 404: Projects not found (yet)<small>at deploy() — works on my machine</small></div>
+  </div>
+</section>
+</main>
+
+<dialog id="tgModal" class="modal">
+  <button class="close" id="closeModal" aria-label="بستن">×</button>
+  <h3>ارسال پیام در تلگرام</h3>
+  <p class="handle" dir="ltr">@ForExampleSina</p>
+  <div class="modal-actions">
+    <a class="btn btn-primary" href="https://t.me/ForExampleSina" target="_blank" rel="noopener noreferrer">باز کردن تلگرام</a>
+    <button class="btn btn-ghost" id="copyBtn" type="button">کپی آیدی</button>
+  </div>
+</dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="common.js"></script>
+<script src="home.js"></script>
+</body>
+</html>
